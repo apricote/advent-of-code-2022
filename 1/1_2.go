@@ -1,5 +1,10 @@
 package main
 
+import "sort"
+
 func SolveCurrentDayWithTwist(input string) int {
-  return 0
+	caloriesPerElf := getCaloriesPerElf(input)
+	sort.Sort(sort.Reverse(sort.IntSlice(caloriesPerElf)))
+
+	return caloriesPerElf[0] + caloriesPerElf[1] + caloriesPerElf[2]
 }
