@@ -9,19 +9,19 @@ import (
 func TestSolveCurrentDay(t *testing.T) {
 	type test struct {
 		input string
-		want  int
+		want  string
 	}
 
 	tests := []test{
-		{input: util.GetExampleInput(), want: 0},
-		//{input: util.GetInput(), want: 0},
+		{input: util.GetExampleInput(), want: "CMZ"},
+		{input: util.GetInput(), want: "ZSQVCCJLL"},
 	}
 
 	for _, tc := range tests {
 		got := SolveCurrentDay(tc.input)
 
 		if tc.want != got {
-			t.Errorf("Expected %d but got %d", tc.want, got)
+			t.Errorf("Expected \"%s\" but got \"%s\"", tc.want, got)
 		}
 	}
 }
