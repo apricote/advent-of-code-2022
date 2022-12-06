@@ -13,8 +13,12 @@ func TestSolveCurrentDay(t *testing.T) {
 	}
 
 	tests := []test{
-		{input: util.GetExampleInput(), want: 0},
-		//{input: util.GetInput(), want: 0},
+		{input: "mjqjpqmgbljsphdztnvjfqwrcgsmlb", want: 7},
+		{input: "bvwbjplbgvbhsrlpgdmjqwftvncz", want: 5},
+		{input: "nppdvjthqldpwncqszvftbrmjlhg", want: 6},
+		{input: "nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg", want: 10},
+		{input: "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw", want: 11},
+		{input: util.GetInput(), want: 1275},
 	}
 
 	for _, tc := range tests {

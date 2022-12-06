@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	//"github.com/apricote/advent-of-code-2022/util"
+	"github.com/apricote/advent-of-code-2022/util"
 )
 
 func TestSolveCurrentDayWithTwist(t *testing.T) {
@@ -13,8 +13,12 @@ func TestSolveCurrentDayWithTwist(t *testing.T) {
 	}
 
 	tests := []test{
-		//{input: util.GetExampleInput(), want: 0},
-		//{input: util.GetInput(), want: 0},
+		{input: "mjqjpqmgbljsphdztnvjfqwrcgsmlb", want: 19},
+		{input: "bvwbjplbgvbhsrlpgdmjqwftvncz", want: 23},
+		{input: "nppdvjthqldpwncqszvftbrmjlhg", want: 23},
+		{input: "nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg", want: 29},
+		{input: "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw", want: 26},
+		{input: util.GetInput(), want: 0},
 	}
 
 	for _, tc := range tests {

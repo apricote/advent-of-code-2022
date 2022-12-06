@@ -1,5 +1,5 @@
 package main
 
 func SolveCurrentDayWithTwist(input string) int {
-  return 0
+	return GetXUniquePosition(input, 14)
 }
